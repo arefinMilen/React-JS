@@ -18,6 +18,11 @@
 .card {
     margin: 10px;
     padding: 10px;
+    background-color: lightblue;
+    box-shadow: 2px 4px 4px gray;
+    width: 350px;
+    display: inline-block;
     border: 1px solid black;
     border-radius: 5px;
+
 }

@@ -4,10 +4,11 @@ const currentDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.ge
 
 // create component
 function Card(props) {
-    const {todoTitle,todoDesc} = props;
+    const {todoTitle,todoDesc,todoInfo} = props;
  return <div className='card'>
-            <p className='cardTitle'>{todoTitle}</p>
-            <p className='cardDesc'>{todoDesc}</p>
+            <p className='cardTitle'>{"name: " + todoTitle}</p>
+            <p className='cardDesc'>{"Age: "+ todoDesc}</p>
+            <p className ='cardInfo'>{"City: " +todoInfo}</p>
             <p className='cardFooter'>{"Current time:" + currentTime + "  " + "Date :" + currentDate}</p>
 </div>
 }

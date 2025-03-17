@@ -8,7 +8,7 @@
   padding: 20px;
   text-align: center;
 }
-.cardTitle,.cardDesc,.cardFooter {
+.cardTitle,.cardDesc,.cardInfo,.cardFooter {
   text-align: center;
   background-color: red;
   color: white;

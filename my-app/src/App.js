@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from './components/Card';
+import data from './mydata.json';
 
 function App() {
+    // console.log(data);
   return  <div>
-    <h1 className='headerStyle'>My first todo list</h1>
-    <Card todoTitle="My 1st card" todoDesc="talk about React.js"/>
-    <Card todoTitle="My 2nd card" todoDesc="talk about Next.js"/>
-    <Card todoTitle="My 3rd card" todoDesc="talk about Nest.js"/>
-  </div>
+            <h1 className='headerStyle'>My first todo list</h1>
+            {data.map((item,index) => <Card key={index} todoTitle={ item.name} todoDesc={item.age} todoInfo={item.city}/>)}
+          </div>
 }
 export default App;

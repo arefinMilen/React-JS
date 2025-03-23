@@ -37,7 +37,7 @@ const List = () => {
                         </div>
                 })
             }
-            <div>list </div>
+            
         </div>
           
     };

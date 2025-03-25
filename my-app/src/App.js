@@ -1,7 +1,12 @@
 import React from 'react';
 import Card from './components/Card';
+import Card2 from './components/Card2';
 import data from './mydata.json';
 import List from './components/unique_list/list';
+import ReactBootstrap from './components/React-Bootstrap/ReactBootstrap';
+
+import {FaFacebook,FaInstagram } from "react-icons/fa";
+
 
 {/* nested   data */}
 const users = [
@@ -9,7 +14,7 @@ const users = [
     name:"arefin",
     age:25,
     phones: [
-        {Home: '017002456734'},
+        {Home:'017002456734'},
         {Office: '443561235666'},
     ]
     },
@@ -47,12 +52,23 @@ export default function App() {
                     user.phones.map((phone,index) => <div>
                         <p>{phone.Home}</p>
                         <p>{phone.Office}</p>
+                        
                     </div>)
                 }
             </article>
           )
             )}
-          </div>       
+          </div>      
+          < Card2 name="this is card 2" /> 
+          <button>
+            < FaFacebook className="icon-dsgn"/>
+          </button>
+          <button>
+            < FaInstagram className="icon-dsgn"/>
+          </button>
+          <div>
+          <ReactBootstrap />
+          </div>          
 </> 
   );       
 }

@@ -4,6 +4,7 @@ import Card2 from './components/Card2';
 import data from './mydata.json';
 import List from './components/unique_list/list';
 import ReactBootstrap from './components/React-Bootstrap/ReactBootstrap';
+import State  from './components/State';
 
 import {FaFacebook,FaInstagram } from "react-icons/fa";
 
@@ -68,7 +69,12 @@ export default function App() {
           </button>
           <div>
           <ReactBootstrap />
-          </div>          
+          </div>  
+                  {/*  state start */}
+                  <div>
+           
+          <State />
+                  </div>
 </> 
   );       
 }

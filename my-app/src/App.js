@@ -5,9 +5,8 @@ import data from './mydata.json';
 import List from './components/unique_list/list';
 import ReactBootstrap from './components/React-Bootstrap/ReactBootstrap';
 import State  from './components/State';
-
 import {FaFacebook,FaInstagram } from "react-icons/fa";
-
+import CONDITIONAL_RENDARING from './components/Conditional_Rendaring';
 
 {/* nested   data */}
 const users = [
@@ -74,6 +73,8 @@ export default function App() {
                   <div>
            
           <State />
+          
+          <CONDITIONAL_RENDARING />
                   </div>
 </> 
   );       

@@ -7,23 +7,32 @@ class CONDITIONAL_RENDARING extends Component {
     super(props)
   
     this.state = {
-       isLoggedIn : false
+       isLoggedIn : true
     }
   }
   
   render() {
-    const isLoggedIn = this.state.isLoggedIn;
-    let element;
-    if(isLoggedIn){
-      element = <HomePage />;
-    }
-    else{
-      element = <LoginPage />;
-    }
+    const {isLoggedIn} = this.state;
+     
+    // using if-else conditionl rendering
+    // let element;
+    // if(isLoggedIn){
+    //   element = <HomePage />;
+    // }
+    // else{
+    //   element = <LoginPage />;
+    // }
 
     return (
       <div>
-         {element}
+         {/* ternary operator conditional rendering */}
+        {isLoggedIn ? <HomePage /> : <LoginPage />} 
+
+        {/* short circuting conditional rendering */}
+        {isLoggedIn && <HomePage />}
+        {!isLoggedIn && <LoginPage />}
+
+        
       </div>
     )
   }

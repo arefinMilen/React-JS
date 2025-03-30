@@ -7,7 +7,7 @@ import ReactBootstrap from './components/React-Bootstrap/ReactBootstrap';
 import State  from './components/State';
 import {FaFacebook,FaInstagram } from "react-icons/fa";
 import CONDITIONAL_RENDARING from './components/Conditional_Rendaring';
-
+import Even_handler from './components/EVENT_HANDLER/index';
 {/* nested   data */}
 const users = [
     {
@@ -73,8 +73,10 @@ export default function App() {
                   <div>
            
           <State />
-          
+
           <CONDITIONAL_RENDARING />
+
+          <Even_handler />
                   </div>
 </> 
   );       

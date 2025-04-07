@@ -9,6 +9,8 @@ import {FaFacebook,FaInstagram } from "react-icons/fa";
 import CONDITIONAL_RENDARING from './components/Conditional_Rendaring';
 import Even_handler from './components/EVENT_HANDLER/index';
 import Event_Binding from './components/Event_Binding/index';
+import Hook_State1 from './components/Hooks_UseState/index1';
+import Hook_State2 from './components/Hooks_UseState/index2';
 {/* nested   data */}
 const users = [
     {
@@ -79,6 +81,8 @@ export default function App() {
 
           <Even_handler />
           <Event_Binding />
+          <Hook_State1 />
+          <Hook_State2 />
                   </div>
 </> 
   );       

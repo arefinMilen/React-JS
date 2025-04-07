@@ -32,9 +32,17 @@ const users = [
   ]
 
 export default function App() {
-    // console.log(data);
-  return (
     
+  // event handler for stop propagation
+  const handleParentClick = (event) => {
+    console.log('parent clicked',event);
+  };
+  const handleChildClick = (event) => {
+    event.stopPropagation();
+    console.log('child clicked',event);
+  };
+   
+  return (
  <>
  {/* making card  */}
        <div>
@@ -83,6 +91,13 @@ export default function App() {
           <Event_Binding />
           <Hook_State1 />
           <Hook_State2 />
+
+           
+          {/* using stop propagation */}
+          <div className='parent'onClick={handleParentClick}>
+            <h2>Stop Propagation</h2>
+            <button onClick={handleChildClick}>+</button>
+          </div>
                   </div>
 </> 
   );       

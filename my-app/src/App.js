@@ -11,6 +11,7 @@ import Even_handler from './components/EVENT_HANDLER/index';
 import Event_Binding from './components/Event_Binding/index';
 import Hook_State1 from './components/Hooks_UseState/index1';
 import Hook_State2 from './components/Hooks_UseState/index2';
+import Forms from './components/Forms/Forms';
 {/* nested   data */}
 const users = [
     {
@@ -98,6 +99,9 @@ export default function App() {
             <h2>Stop Propagation</h2>
             <button onClick={handleChildClick}>+</button>
           </div>
+
+          {/* create a user forms */}
+          <Forms />
                   </div>
 </> 
   );       

@@ -14,7 +14,7 @@ import Hook_State2 from './components/Hooks_UseState/index2';
 import Forms from './components/Forms/Forms';
 
 import Child from './components/State_lifting/Child';
-{/* nested   data */}
+// {/* nested   data */}
 const users = [
     {
     name:"arefin",
@@ -44,10 +44,11 @@ export default function App() {
     event.stopPropagation();
     console.log('child clicked',event);
   };
-   const data = "i am from parent";
-   const handleChildData = (childData) => {
-    console.log(childData);
-    };
+   const message = "i am from parent(app)";
+
+   const handleChildMess = (childData)=> {
+    console.log("App: " + childData);
+   }
   return (
  <>
  {/* making card  */}
@@ -108,7 +109,7 @@ export default function App() {
           {/* create a user forms */}
           <Forms />
 
-          < Child data={data} onChildData={handleChildData} />
+          <Child message={message} onChildMess={handleChildMess}/>
                   </div>
 </> 
   );       

@@ -14,6 +14,8 @@ import Hook_State2 from './components/Hooks_UseState/index2';
 import Forms from './components/Forms/Forms';
 
 import Child from './components/State_lifting/Child';
+import Todo from './components/Todo';
+import NewTodo from './components/newTodo';
 // {/* nested   data */}
 const users = [
     {
@@ -48,6 +50,9 @@ export default function App() {
 
    const handleChildMess = (childData)=> {
     console.log("App: " + childData);
+   }
+   const handleNewTodo = (newTodo) =>{
+    console.log(newTodo);
    }
   return (
  <>
@@ -110,6 +115,9 @@ export default function App() {
           <Forms />
 
           <Child message={message} onChildMess={handleChildMess}/>
+
+          <NewTodo onHandleNewTodo = {handleNewTodo} />
+          <Todo title="learn react.js" />
                   </div>
 </> 
   );       

@@ -16,6 +16,7 @@ import Forms from './components/Forms/Forms';
 import Child from './components/State_lifting/Child';
 import Todo from './components/Todo';
 import NewTodo from './components/newTodo';
+import Home from './components/State_lifting/Home';
 // {/* nested   data */}
 const users = [
     {
@@ -118,6 +119,8 @@ export default function App() {
 
           <NewTodo onHandleNewTodo = {handleNewTodo} />
           <Todo title="learn react.js" />
+
+          <Home />
                   </div>
 </> 
   );       

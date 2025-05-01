@@ -1,0 +1,15 @@
+.todo{
+    padding:20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+.btn {
+    color:red;
+    background: #000;
+    border: none;
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Todos from './Todos'
+import style from './home.module.css'
 
 const dummyTodos = [
     {
@@ -21,7 +22,8 @@ const dummyTodos = [
 ]
 const Home = () => {
   return (
-    <div>
+    <div className={style.container}>
+        <h1 style={{color:'green'}}>Todo App</h1>
       <Todos todos={dummyTodos} />
     </div>
   )

@@ -14,7 +14,8 @@ Handling user input and form submissions
 Rendering lists and conditional components
 
 Preview:
-```javascript const [tasks, setTasks] = useState([]); const addTask = (task) => setTasks([...tasks, task]); 
+```javascript
+ const [tasks, setTasks] = useState([]); const addTask = (task) => setTasks([...tasks, task]); 
 ```
   
 2. Blog Project
@@ -29,7 +30,8 @@ Fetching and displaying data
 Component composition and props
 
 Preview:
- ```javascript   <Route path="/posts" element={<Posts />} />
+ ```javascript
+ <Route path="/posts" element={<Posts />} />
  ``` 
 
 3. Form Validation
@@ -44,7 +46,8 @@ Form validation logic
 Handling form submission
 
 Preview:
- ``` javascriptconst handleSubmit = (e) => {e.preventDefault(); if (formIsValid) {  // submit form}};
+ ``` javascriptconst
+handleSubmit = (e) => {e.preventDefault(); if (formIsValid) {  // submit form}};
  ``` 
 
 🛠️ Getting Started
@@ -53,36 +56,40 @@ Node.js and npm installed
 
 Installation
 1. Clone the repository:
-    ```
-  bash  git clone https://github.com/arefinMilen/React-JS.git
+ ```bash
+ git clone https://github.com/arefinMilen/React-JS.git
  ```
 
 2. Navigate to the project directory:
 
- ```
- bash cd React-JS ``` 
+ ```bash
+ cd React-JS
+``` 
 
 3. Install dependencies:
- ```bash  npm install
-
+   
+ ```bash
+ npm install
  ``` 
 
 Running a Project
 Each project is located in its own subdirectory. To run a specific project:
 
- ```bash   cd project-folder-name
-
+ ```bash
+cd project-folder-name
  ``` 
 
 Navigate to the project folder:
 
- ```bash  cd project-folder-name
+ ```bash
+ cd project-folder-name
 
  ``` 
 
 2. Start the development server:
 3. 
- ```bash   npm start
+ ```bash
+ npm start
 
  ``` 
 

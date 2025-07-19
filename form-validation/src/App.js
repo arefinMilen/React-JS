@@ -5,6 +5,7 @@ import Toggle from './component/Toggle';
 import './App.css';
 import FAQS from './component/FAQ/FAQS';
 import UseEffectExample from './component/UseEffectExample';
+import DataFetch from './component/CustomHooks/Datafetch';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Toggle />
       <FAQS />
       <UseEffectExample />
+      <DataFetch />
     </div>
   );
 }

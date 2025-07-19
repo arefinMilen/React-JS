@@ -29,4 +29,4 @@ const UseEffectExample = () => {
   )
 }
 
-export default UseEffectExample
+export default UseEffectExample;
